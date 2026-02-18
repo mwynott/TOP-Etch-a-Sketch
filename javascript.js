@@ -16,5 +16,13 @@ function createGrid() {
         container.appendChild(cell);
     }
 }
+//Reset the cells to white
+
+document.getElementById("reset").addEventListener("click", () => {
+    const cells = document.querySelectorAll(".grid-item");
+    cells.forEach(cell => {
+        cell.style.backgroundColor = "white";
+    })
+})
 
 createGrid();
